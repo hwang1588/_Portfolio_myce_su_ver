@@ -1,0 +1,312 @@
+/* reset */
+body, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, table, tr, th, td, form, fieldset, legend, input, label, textarea, select, button {margin: 0; padding: 0;}
+body, h1, h2, h3, h4, h5, h6 {font-size: 8px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #232323;}
+a {text-decoration: none; color: #232323;}
+ul, ol, li {list-style: none;}
+img, fieldset {border: none; vertical-align: middle;}
+strong, em, address {font-weight: normal; font-style: normal;}
+table {border-collapse: collapse;}
+
+/* common */
+html,
+body {width: 100%; height: 100%; background-color: #fffdf5;}
+#visual {width: 90%; margin: 0 auto;}
+.center {margin: 0 auto; text-align: center;}
+.none {display: none;}
+
+.mb-16px {margin-bottom: 16px;}
+.mb-40px {margin-bottom: 40px;}
+
+.mt-120px {margin-top: 120px;}
+
+.title_text {font-size: 16px; font-family: 'Montserrat', sans-serif; line-height: 24px;}
+.headline_text {font-size: 12px; font-family: 'Montserrat', sans-serif; font-weight: 400; line-height: 16px;}
+.sub_text {font-size: 14px; line-height: 20px;}
+
+.text_focus {font-weight: 700;}
+.line_box {width: 48px; height: 2px; background-color: #0050B9; margin-bottom: 40px;}
+.img_box {width: 100%; height: auto;}
+.img_box img {display: block; width: 100%;}
+
+.text_list li {height: 18px; margin-bottom: 12px;}
+.text_list li a {height: 18px; display: block;}
+.text_list li span {font-size: 14px; font-family: 'Montserrat', sans-serif; height: 18px;}
+.text_list li img {width: 16px; height: 16px; display: block; float: left; margin-right: 6px; margin-top: 1px;}
+
+/* header */
+#header {width: 100%; height: 72px; background-color: #ff9a3e; position: fixed; z-index: 100; box-shadow: 0 2px 10px 0 rgba( 0, 0, 0, 0.2); transition-duration:0.4s; transition-timing-function:ease;}
+.header {width: 90%; margin: 0 auto;}
+
+.header .logo {width: 72px; height: 24px; margin-top: 24px; float: left;}
+.header .logo a,
+.header .logo a img {width: 72px; height: 24px; display: block;}
+
+.header .menu {float: right; display: none;}
+.header .menu.on {display: block; position: fixed; left: 0; top: 0; width: calc(100% - 64px); height: 100%; background-color: rgba( 255, 253, 245, 1); box-shadow: 0 2px 10px 0 rgba( 0, 0, 0, 0.1);} 
+
+.all {width: 24px; height: 24px; position: absolute; right: 5%; top: 24px;}
+
+.all span {width: 100%; height: 3px; background-color: rgba( 35, 35, 35, 1); color: transparent; position: absolute; top: 50%; transform: translate(0, -50%); transition: all 0.5s;}
+.all span:before,
+.all span:after {content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 3px; background-color: rgba( 35, 35, 35, 1); transition: all 0.5s;}
+.all span:before {top: 7px;}
+.all span:after {top: -7px;}
+
+.all.on span {background-color: rgba( 103, 23, 19, 0);}
+.all.on span:before {top: 0; transform: rotate(-45deg);}
+.all.on span:after {top: 0; transform: rotate(45deg);}
+
+.menu h2 {position: absolute; left: 10%; top: 48px;}
+.menu h2 img {width: 32px; height: 32px;}
+
+.gnb {position: absolute; left: 10%; top: 120px;}
+.gnb li {margin-bottom: 32px; text-align: left;}
+.gnb li a {font-size: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; width: 100%;}
+
+.etc {position: absolute; left: 10%; bottom: 32px;}
+.etc li {margin-bottom: 24px; text-align: left;}
+.etc li a {font-size: 16px; font-family: 'Montserrat', sans-serif; width: 100%; color: #ff9a3e;}
+
+/* footer */
+#footer {height: 320px; margin-top: 80px; position: relative;}
+.footer {padding-top: 48px;}
+.footer::before {content:""; position: absolute; left: 50%; top: 0; transform: translateX(-50%); background-color: #e2e2e2; width: 85%; height: 1px;}
+
+#footer .logo {width: 32px; height: 32px;}
+#footer .logo img {width: 32px; height: 32px;}
+
+#footer p {font-size: 10px; line-height: 14px; color: #777; margin-bottom: 24px;}
+#footer .sub_text {font-size: 12px; line-height: 16px; color: 444;}
+
+/* -------------------- index.html -------------------- */
+/* main */
+.main .title_text {font-size: 16px; padding: 160px 0 48px 0; color: #0050B9;}
+.main .img_box {width: 95%; height: auto; margin: 0 auto;}
+
+/* economy */
+.economy .img_box,
+.economy .img_box img {width: 90%; height: auto; margin: 0 auto;}
+
+
+/* bloom */
+.bloom .img_box,
+.bloom .img_box img {width: 90%; height: auto; margin: 0 auto;}
+
+.bloom .img_box {background: url(../img/img_bloom_bg.png) center center no-repeat; width: 100%;}
+
+
+/* project */
+.project .img_box,
+.project .img_box img {width: 90%; height: auto; margin: 0 auto; padding-bottom: 40px;}
+
+
+/* decentralized */
+.decentralized .img_box img {width: 90%; height: auto; margin: 0 auto;}
+
+
+/* community */
+.community {height: 125px;}
+
+.sns {width: 274px; margin: 0 auto;}
+.sns li {width: 42px; height: 42px; float: left; margin-right: 16px;}
+.sns li:last-child {margin-right: 0;}
+.sns li a,
+.sns li a img {width: 42px; height: 42px; display: block;}
+
+
+/* -------------------- token.html -------------------- */
+/* myce */
+.myce {padding-top: 120px;}
+
+.myce .img_box,
+.myce .img_box img {width: 100%;}
+
+
+/* feature */
+.feature ul li .img_box,
+.feature ul li .img_box img {width: 90%; height: auto}
+
+.feature ul li .text_focus {font-size: 15px; font-weight: 700;}
+.feature ul li .sub_text {width: 100%;}
+
+/* service */
+.service .img_box,
+.service .img_box img {width: 100%; height: auto; margin: 0 auto;}
+
+
+/* -------------------- bloom.html -------------------- */
+/* platform */
+.platform {padding-top: 120px;}
+
+.platform .img_box,
+.platform .img_box img {width: 100%; height: auto;}
+
+
+/* token */
+.token .img_box,
+.token .img_box img {width: 90%; margin: 0 auto;}
+
+
+/* nft */
+.nft .img_box,
+.nft .img_box img {width: 100%; height: auto; margin: 0 auto;}
+
+.nft .btn {width: 76px; height: 30px; margin: 16px auto;}
+.nft .btn ul {width: 76px; height: 30px;}
+.nft .btn ul li {width: 30px; height: 30px; float: left;}
+.nft .btn ul li:first-child {margin-right: 16px;}
+.nft .btn ul li a,
+.nft .btn ul li a img {width: 30px; height: 30px; display: block;}
+
+
+/* utility */
+.utility .img_box,
+.utility .img_box img {width: 100%; height: auto;}
+
+
+/* -------------------- dev.html -------------------- */
+/* team */
+.team {padding-top: 120px;}
+
+.team_list div .img_box,
+.team_list div .img_box img {width: 86%; height: 86%; margin: 0 auto;}
+
+.team_list div .title_text {margin-top: 16px;}
+.team_list div .sub_text {margin-bottom: 8px;}
+
+.team_list div p:last-child a,
+.team_list div p:last-child img {width: 24px; height: 24px; display: block; margin: 0 auto;}
+
+.team .btn {width: 76px; height: 30px; margin: 16px auto;}
+.team .btn ul {width: 76px; height: 30px;}
+.team .btn ul li {width: 30px; height: 30px; float: left;}
+.team .btn ul li:first-child {margin-right: 16px;}
+.team .btn ul li a,
+.team .btn ul li a img {width: 30px; height: 30px; display: block;}
+
+
+/* roadmap */
+.roadmap .text_list {width: 190px; height: 18px; margin: 0 auto; padding-bottom: 40px;}
+.roadmap .text_list li {float: left; margin-bottom: 0px;}
+.roadmap .text_list li:first-child {margin-right: 16px;}
+
+.roadmap .roadmap_y .line_box {margin-bottom: 16px; width: 20px; height: 2px;}
+.roadmap_y span {font-size: 16px; font-family: 'Montserrat', sans-serif;  display: block; background-color: #ff9a3e; color: #fff; text-align: center; padding: 4px 0;}
+
+.roadmap_box .first {font-size: 14px; margin: 32px 0 8px 0;}
+.roadmap_box .first img {width: 18px; height: 18px; margin-right: 8px; margin-top: -3px;}
+
+.roadmap_t .headline_text {font-weight: 700; color: #af1921; line-height: 24px;}
+.roadmap_b .headline_text {font-weight: 700; color: #ff9a3e; line-height: 24px;}
+
+
+/* -------------------- paper.html -------------------- */
+/* paper */
+.paper {padding-top: 160px;}
+.paper_wrap {background: url(../img/m_img_paper.jpg) center bottom no-repeat; background-color: #a9e4e6; background-size: contain; height: 100%; overflow-y: hidden;}
+
+.paper_footer {position: absolute; left: 50%; bottom: 32px; transform: translateX(-50%); width: 100%;}
+
+
+/*gototop btn:s*/
+.c-go-top {
+/*	background: none repeat scroll 0 0 padding-box #ffffff;*/
+/*	border: 1px solid #1099dd;*/
+    background: linear-gradient(229deg, rgb(255 125 0), rgb(255 94 0) 70.71%),
+      linear-gradient(84deg, rgb(255 183 59), rgba(0,255,0,0) 70.71%),
+      linear-gradient(343deg, rgb(255 134 47), rgb(255 255 255 / 0%) 70.71%);
+	bottom: 30px;
+	border-radius: 4px;
+	color: #333333;
+	display: none;
+	font-size: 12px;
+	opacity: 1;
+	padding: 7px 10px;
+	position: fixed;
+	right: calc(100% - 95%);
+	text-decoration: none;
+	z-index: 999;
+    color: #ffffff !important;
+    font-weight: 600;
+
+}
+
+.c-go-top:hover,
+.c-go-top:focus,
+.c-go-top:active,
+.c-go-top:visited {
+	color: #fff;
+	outline: 0;
+	text-decoration: none;
+	background-color: #ff9a3e;
+    transition: 0.5s
+
+}
+
+/*gototop btn:e*/
+
+.down {
+	background-color:#fffdf5 !important;
+	border-bottom: 1px solid #111;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+	-webkit-transition-duration:0.4s;
+	-webkit-transition-timing-function:ease;
+	transition-duration:0.4s;
+	transition-timing-function:ease;
+  }
+
+/*애니메이션 시리즈:s*/
+/*1번 애니메이션:s*/
+.animation-move {
+	-webkit-animation: mover 2s infinite alternate;
+	animation: mover 2.5s infinite alternate;
+	animation-delay: 350ms;
+}
+
+@keyframes mover {
+	0% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(10px);
+	}
+}
+/*1번 애니메이션:e*/
+/*애니메이션 시리즈:e*/
+
+
+
+@media screen and (min-width: 540px) { 
+	/* economy */
+	.economy .img_box img {width: 75%; margin: 0 auto;}
+
+	/* bloom */
+	.bloom .img_box img {width: 70%;}
+	
+	/* project */
+	.project .img_box img {width: 85%;}
+	
+	/* decentralized */
+	.decentralized .img_box img {width: 70%; margin: 0 auto;}
+
+	/* feature */
+	.feature ul li .img_box,
+	.feature ul li .img_box img {width: 72%; height: 72%; margin: 0 auto;}
+	.feature ul li .sub_text {width: 80%;}
+
+	/* service */
+	.service .img_box,
+	.service .img_box img {width: 80%;}
+
+	/* platform */
+	.platform .img_box img {width: 72%; margin:0 auto;}
+
+	/* nft */
+	.nft .img_box img {width: 80%;}
+
+	/* utility */
+	.utility .img_box img {width: 70%; margin: 0 auto;}
+} 
+.slick-track{display: flex !important;
+    align-items: center !important;}

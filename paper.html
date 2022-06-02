@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#ff9a3e">
+  <meta name="naver-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+  <meta property="og:title" content="Myce.io">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://myce.io">
+  <meta name="description" content="Myce.io">
+  <meta name="og:description" content="Myce.io">
+  <meta name="keyword" content="Myce.io">
+  <meta name="og:keyword" content="Myce.io">
+  <title>MYCE</title>
+
+  <!-- 모바일 전환 스크립트 -->
+  <script>
+    function isMobile() {
+      var UserAgent = navigator.userAgent;
+      if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    if (isMobile()) {
+      location.href = "m/paper.html" //모바일페이지
+    } else {}
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="icon" href="https://myce.io/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- 파비콘 -->
+  <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 스타일시트 -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--import 스타일시트 -->
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header" class="wrap_width">
+      
+    </header>
+
+    <div id="visual">
+      <div class="paper wrap_width">
+        <div class="box_width">
+          <section class="test"> <!-- ← 스크롤시 헤더 색 변경 섹션  -->
+            <div class="line_box"></div>
+          </section>
+          
+          <p class="title_text text_focus mb-32px wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1.5s" >Whitepaper</p>
+
+          <ul class="text_list">
+            <li>
+              <a href="img/whitepaper_en.pdf" target="_blank" class="wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1.5s" >
+                <span><img src="img/icon_arr_next.svg">ENG ver.</span>
+              </a>
+            </li>
+            <li>
+              <a href="img/whitepaper_kr.pdf" target="_blank" class="wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1.5s" >
+                <span><img src="img/icon_arr_next.svg">KOR ver.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          <div class="text_box">
+            <p>
+              UNITED CEREMONIA PTE., LTD.<br>
+              Location - 16 RAPPLES QUAY #16-05 HONG LEONG BUILDING SINGAPORE (048581)
+            </p>
+            <p>
+              NAMOK Inc. (Site Management)<br>
+              CEO - Soonho Ock<br>
+              Location - 16, Teheran-ro 10-gil, Gangnam-gu, Seoul, Republic of Korea 06234<br>
+              Company Registration No - 871-87-02115<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- e: visual -->
+<!--go to top btn:s-->
+  <a href="#" id="c-go-top" class="c-go-top">
+    ↑ TOP
+  </a>
+<!--go to top btn:e-->
+  </div>
+  <script type="text/javascript" src="js/gototop.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+<script>
+    $(function() {
+      $('#header').load('header.html');
+      $('#footer').load('footer.html');
+    });
+  </script>
+</body>
+
+</html>

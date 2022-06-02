@@ -1,0 +1,34 @@
+<div class="header">
+        <h1 class="logo">
+          <a href="index.html"><img src="../../img/logo_myce.svg" alt="MYCE"></a>
+        </h1>
+
+        <a href="#" class="all"><span>메뉴</span></a>
+
+        <div class="menu">
+          <h2><img src="../../img/logo_myce_3.svg" alt="MYCE"></h2>
+
+          <ul class="gnb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="token.html">MYCE Token</a></li>
+            <li><a href="bloom.html">Bloom Economy</a></li>
+            <li><a href="dev.html">Dev Team</a></li>
+            <li><a href="paper.html">Whitepaper</a></li>
+          </ul>
+
+          <ul class="etc">
+            <li><a href="https://global.bittrex.com/Market/Index?MarketName=USDT-MYCE" target="_blank" alt="BITTREX 바로가기">BITTREX</a></li>
+            <li><a href="https://www.cashierest.com/stock/coinstock" target="_blank" alt="Cashierest 바로가기">Cashierest</a></li>
+            <li><a href="mailto:myce@myce.io" alt="Contact us">Contact Us</a></li>
+            <li><a href="ko/index.html" alt="국문 전환">Ko</a></li>
+          </ul>
+        </div>
+      </div>
+<script>
+    $(document).ready(function() {
+      $(".all").click(function() {
+        $(this).toggleClass("on");
+        $(".header .menu").toggleClass("on");
+      });
+    });
+  </script>

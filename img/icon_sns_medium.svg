@@ -1,0 +1,8 @@
+<svg id="icon_sns_medium" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <circle id="타원_142" data-name="타원 142" cx="32" cy="32" r="32" fill="#ff9a3e" opacity="0.2"/>
+  <g id="icon_sns_medium-2" data-name="icon_sns_medium" transform="translate(18.5 24.315)">
+    <circle id="타원_1" data-name="타원 1" cx="7.685" cy="7.685" r="7.685" transform="translate(0)" fill="#ff9a3e"/>
+    <ellipse id="타원_2" data-name="타원 2" cx="3.842" cy="7.269" rx="3.842" ry="7.269" transform="translate(15.888 0.415)" fill="#ff9a3e"/>
+    <ellipse id="타원_3" data-name="타원 3" cx="1.35" cy="6.542" rx="1.35" ry="6.542" transform="translate(24.3 1.142)" fill="#ff9a3e"/>
+  </g>
+</svg>
