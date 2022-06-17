@@ -13,8 +13,9 @@
   <meta property="og:title" content="Myce.io">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://myce.io">
-  <meta name="description" content="Myce.io">
-  <meta name="og:description" content="Myce.io">
+  <meta property="og:image" content="img/og_image.png">
+  <meta name="description" content="My Ceremonial Event">
+  <meta name="og:description" content="My Ceremonial Event">
   <meta name="keyword" content="Myce.io">
   <meta name="og:keyword" content="Myce.io">
   <title>MYCE</title>
@@ -61,9 +62,9 @@
               <img src="../img/img_team_shok.svg">
             </div>
 
-            <p class="title_text text_focus center">Metthew</p>
+            <p class="title_text text_focus center">Matthew</p>
             <p class="sub_text center">Head of Technology</p>
-            <p class="center"><a href="https://www.linkedin.com/in/%EC%88%9C%ED%98%B8-%EC%98%A5-90124090/" target="_blank"><img src="../img/icon_linkedin.svg"></a></p>
+            <p class="center"><a href="https://www.linkedin.com/in/matthew-ock-90124090/" target="_blank"><img src="../img/icon_linkedin.svg"></a></p>
           </div>
           <div>
             <!-- 이태광 차장 -->
@@ -154,7 +155,7 @@
             </ul>
 
             <ul class="roadmap_box roadmap_b">
-              <li class="headline_text first wow fadeIn" data-wow-delay="0.1s" data-wow-duration="1s"><img src="../img/icon_b.svg">Developmentof token payment system</li>
+              <li class="headline_text first wow fadeIn" data-wow-delay="0.1s" data-wow-duration="1s"><img src="../img/icon_b.svg">Development of token payment system</li>
               <li class="sub_text wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1s">ㆍ project planning, business planning, Distribute white paper (Korean, English, Chinese)</li>
               <li class="sub_text wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1s">ㆍ Listed on the domestic exchange (Cashierest)</li>
             </ul>
@@ -343,34 +344,55 @@
       });
 
       $('.team_list').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        prevArrow: '.prev',
-        nextArrow: '.next',
-        //autoplay: true,
-        autoplaySpeed: 2000,
-      });
+        dots: false,          // 스크롤바 아래 점으로 페이지네이션 여부
+        infinite: true,       // 무한 반복
+        speed: 1000,          // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+        slidesToShow: 4,      // 한 화면에 보여질 컨텐츠 개수
+        pauseOnHover: true,   // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+        autoplay: true,       // 오토 슬라이드
+        autoplaySpeed: 2000,  // 오토 슬라이드 속도
+        prevArrow: ".prev",   // 이전 화살표 모양 설정
+        nextArrow: ".next",   // 다음 화살표 모양 설정
+        draggable: true,      //드래그 가능 여부 
+        adaptiveHeight: true, // height 값 맞춤
 
+        // 반응형 웹 구현 옵션
+        responsive: [         
+          {
+            breakpoint: 960,  //화면 사이즈 960px
+            settings: {       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경  
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 540,  //화면 사이즈 540px
+            settings: {       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
     });
   </script>
-<script>
-    $(document).ready(function() {
-      $(".all").click(function() {
-        $(this).toggleClass("on");
-        $(".header .menu").toggleClass("on");
-      });
 
-      $(".nft .btn ul li a").click(function() {
-        $(".nft .img_box").toggleClass("none");
+  <script>
+      $(document).ready(function() {
+        $(".all").click(function() {
+          $(this).toggleClass("on");
+          $(".header .menu").toggleClass("on");
+        });
+
+        $(".nft .btn ul li a").click(function() {
+          $(".nft .img_box").toggleClass("none");
+        });
       });
-    });
   </script>
-<script>
-    $(function() {
-      $('#header').load('m_header.html');
-      $('#footer').load('m_footer.html');
-    });
+
+  <script>
+      $(function() {
+        $('#header').load('m_header.html');
+        $('#footer').load('m_footer.html');
+      });
   </script>
 </body>
-
 </html>

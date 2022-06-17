@@ -13,8 +13,9 @@
   <meta property="og:title" content="Myce.io">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://myce.io">
-  <meta name="description" content="Myce.io">
-  <meta name="og:description" content="Myce.io">
+  <meta property="og:image" content="img/og_image.png">
+  <meta name="description" content="My Ceremonial Event">
+  <meta name="og:description" content="My Ceremonial Event">
   <meta name="keyword" content="Myce.io">
   <meta name="og:keyword" content="Myce.io">
   <title>MYCE</title>
@@ -59,9 +60,8 @@
 
         <p class="title_text text_focus center mb-80px wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.5s">Key team members</p>
 
-        <ul class="team_list center mb-80px">
-          <li class="">          
-
+        <div class="team_list">
+          <div class="team_box">
             <!-- 김윤성 부장 -->
             <div class="img_box">
               <img src="img/img_team_yskim.svg">
@@ -72,20 +72,20 @@
               <a href="https://www.linkedin.com/in/yoonsung-k-15275960/" target="_blank"><img src="img/icon_linkedin.svg"></a>
             </div>
             <p class="sub_text">Head of Project</p>
-          </li>
-          <li>
+          </div>
+          <div class="team_box">
             <!-- 옥순호 대표 -->
             <div class="img_box">
               <img src="img/img_team_shok.svg">
             </div>
 
             <div class="text_box">
-              <span class="title_text text_focus">Metthew</span>
-              <a href="https://www.linkedin.com/in/%EC%88%9C%ED%98%B8-%EC%98%A5-90124090/" target="_blank"><img src="img/icon_linkedin.svg"></a>
+              <span class="title_text text_focus">Matthew</span>
+              <a href="https://www.linkedin.com/in/matthew-ock-90124090/" target="_blank"><img src="img/icon_linkedin.svg"></a>
             </div>
             <p class="sub_text">Head of Technology</p>
-          </li>
-          <li>
+          </div>
+          <div class="team_box">
             <!-- 이태광 차장 -->
             <div class="img_box">
               <img src="img/img_team_tklee.svg">
@@ -96,8 +96,8 @@
               <a href="https://www.linkedin.com/in/taekwang-lee-444b981b5/" target="_blank"><img src="img/icon_linkedin.svg"></a>
             </div>
             <p class="sub_text">Head of Platform<br>Service Development</p>
-          </li>
-          <li>
+          </div>
+          <div class="team_box">
             <!-- 오의섭 과장 -->
             <div class="img_box">
               <img src="img/img_team_usoh.svg">
@@ -108,10 +108,8 @@
               <a href="https://www.linkedin.com/in/%EC%9D%98%EC%84%AD-%EC%98%A4-8089b01b6/" target="_blank"><img src="img/icon_linkedin.svg"></a>
             </div>
             <p class="sub_text">Part Leader of<br>Front-end Service<br>Development</p>
-          </li>
-        </ul>
-        <ul class="team_list none center mb-80px">
-          <li>
+          </div>
+          <div class="team_box">
             <!-- 박준 차장 -->
             <div class="img_box">
               <img src="img/img_team_jpark.svg">
@@ -122,8 +120,8 @@
               <a href="https://www.linkedin.com/in/%EC%A4%80-%EB%B0%95-237105227/" target="_blank"><img src="img/icon_linkedin.svg"></a>
             </div>
             <p class="sub_text">Chief of Service Strategy</p>
-          </li>
-          <li>
+          </div>
+          <div class="team_box">
             <!-- 강봉주 차장 -->
             <div class="img_box">
               <img src="img/img_team_bjkang.svg">
@@ -134,8 +132,8 @@
               <a href="https://www.linkedin.com/in/%EB%B4%89%EC%A3%BC-%EA%B0%95-b65106227/" target="_blank"><img src="img/icon_linkedin.svg"></a>
             </div>
             <p class="sub_text">Chief of Marketing</p>
-          </li>
-          <li>
+          </div>
+          <div class="team_box">
             <!-- 김은주 차장 -->
             <div class="img_box">
               <img src="img/img_team_ejkim.svg">
@@ -146,14 +144,14 @@
               <a href="https://www.linkedin.com/in/%EC%9D%80%EC%A3%BC-%EA%B9%80-8540a6227/" target="_blank"><img src="img/icon_linkedin.svg"></a>
             </div>
             <p class="sub_text">Chief of Commerce<br>and Operation</p>
-          </li>
-        </ul>
+          </div>
+        </div>
 
         <ul class="btn center">
-          <li>
+          <li class="prev">
             <a href="javascript:void(0);"><img src="img/icon_arr_prev.svg"></a>
           </li>
-          <li>
+          <li class="next">
             <a href="javascript:void(0);"><img src="img/icon_arr_next.svg"></a>
           </li>
         </ul>
@@ -190,7 +188,7 @@
 
               <ul class="roadmap_box">
                 <li class="headline_text wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1.5s" ><img src="img/icon_b.svg">
-                  Developmentof token payment<br>
+                  Development of token payment<br>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   system</li>
 
@@ -461,18 +459,54 @@
     <footer id="footer" class="wrap_width">
       
     </footer>
-<!--go to top btn:s-->
-  <a href="#" id="c-go-top" class="c-go-top">
-    ↑ TOP
-  </a>
-<!--go to top btn:e-->
+
+    <!--go to top btn:s-->
+    <a href="#" id="c-go-top" class="c-go-top">
+      ↑ TOP
+    </a>
+    <!--go to top btn:e-->
   </div>
 
+  <!-- slick slider -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
     $(document).ready(function() {
+      $(".team_list").slick({
+        dots: false,          // 스크롤바 아래 점으로 페이지네이션 여부
+        infinite: true,       // 무한 반복
+        speed: 1000,           // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+        slidesToShow: 4,      // 한 화면에 보여질 컨텐츠 개수
+        pauseOnHover: true,   // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+        autoplay: true,       // 오토 슬라이드
+        autoplaySpeed: 2000,  // 오토 슬라이드 속도
+        prevArrow: ".prev",        // 이전 화살표 모양 설정
+        nextArrow: ".next",        // 다음 화살표 모양 설정
+        draggable: true,      //드래그 가능 여부 
+        adaptiveHeight: true,  // height 값 맞춤
+
+        // 반응형 웹 구현 옵션
+        responsive: [         
+          {
+            breakpoint: 960,  //화면 사이즈 960px
+            settings: {       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경  
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 768,  //화면 사이즈 768px
+            settings: {       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+
+
+      /*
       $(".team .btn li a").click(function() {
         $(".team_list").toggleClass("none");
       });
+      */
     });
   </script>
   <script type="text/javascript" src="js/gototop.js"></script>

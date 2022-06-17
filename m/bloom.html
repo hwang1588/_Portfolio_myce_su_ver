@@ -13,8 +13,9 @@
   <meta property="og:title" content="Myce.io">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://myce.io">
-  <meta name="description" content="Myce.io">
-  <meta name="og:description" content="Myce.io">
+  <meta property="og:image" content="img/og_image.png">
+  <meta name="description" content="My Ceremonial Event">
+  <meta name="og:description" content="My Ceremonial Event">
   <meta name="keyword" content="Myce.io">
   <meta name="og:keyword" content="Myce.io">
   <title>MYCE</title>
@@ -58,7 +59,7 @@
         <div class="line_box mt-120px center"></div>
 
         <p class="title_text mb-16px center"><span class="text_focus wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s">Token Economy</span></p>
-        <p class="sub_tex mb-40px center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s">
+        <p class="sub_text mb-40px center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s">
           MYCE tokens make differentiate business models to increase the usefulness of cryptocurrency, and to build a new ecosystem paradigm where unspecified people participate in business networks share values together.
         </p>
 
@@ -75,11 +76,11 @@
         <p class="title_text mb-16px center"><span class="text_focus">NFT</span></p>
 
         <div class="img_box center">
-          <img src="../img/img_nft_1.svg">
+          <img src="../img/m_img_nft_1.svg">
         </div>
 
         <div class="img_box none center">
-          <img src="../img/img_nft_2.svg">
+          <img src="../img/m_img_nft_2.svg">
         </div>
 
         <div class="btn">
@@ -94,8 +95,7 @@
         </div>
 
         <p class="sub_text center mb-40px wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="2s">
-          NFT membership have special membership qualifications<br>
-          that will increase benefits over time and allow to enjoy the privileges.
+          NFT membership have special membership qualifications that will increase benefits over time and allow to enjoy the privileges.
         </p>
       </div>
       <!-- e: NFT -->
@@ -143,7 +143,15 @@
     new WOW().init();
   </script>
   
-<script>
+  <script>
+    $(document).ready(function() {
+      $(".nft .btn li a").click(function() {
+        $(".nft .img_box").toggleClass("none");
+      });
+    });
+  </script>
+  
+  <script>
     $(function() {
       $('#header').load('m_header.html');
       $('#footer').load('m_footer.html');

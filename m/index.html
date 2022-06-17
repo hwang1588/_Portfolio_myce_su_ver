@@ -13,8 +13,9 @@
   <meta property="og:title" content="Myce.io">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://myce.io">
-  <meta name="description" content="Myce.io">
-  <meta name="og:description" content="Myce.io">
+  <meta property="og:image" content="img/og_image.png">
+  <meta name="description" content="My Ceremonial Event">
+  <meta name="og:description" content="My Ceremonial Event">
   <meta name="keyword" content="Myce.io">
   <meta name="og:keyword" content="Myce.io">
   <title>MYCE</title>
@@ -112,7 +113,7 @@
         </div>
 
         <p class="title_text center mb-16px wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1s">The heart of <span class="text_focus">MYCE</span> project</p>
-        <p class="sub_text center wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.5s">The interplay between services(or goods), money and data based on Blockchain ecosystem</p>
+        <p class="sub_text center wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.5s">The interplay between services(or goods), money and data based on Blockchain ecosystem.</p>
       </div>
       <!-- e: project -->
 
@@ -130,36 +131,33 @@
         </p>
       </div>
       <!-- e: decentralized -->
-<!--slick :s-->
-<div class="line_box center" style="margin-top: 100px"></div>
-<p class="title_text center wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.5s"><span class="text_focus">PARTNERS</span></p>
-      <center>
-        <div style="width: 50%; margin-top: 50px;">
-          <div id="slider-div">
 
-            <div style="margin: 0 20px;"><img src="../../img/partners_kgmobilians.png" style="width:100%;"></div>
-<!--            <div style="margin: 0 20px;"><img src="../../img/partners_renaissance.png" style="width:100%;"></div>-->
-            <div style="margin: 0 20px;"><img src="../../img/partners_slowmist.png" style="width:100%;"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_Trustology.svg" style="width:100%;"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_wonfun.png" style="width:100%;"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_ziin.png" style="width:100%;"></div>
-<!--            <div style="margin: 0 20px;"><img src="../../img/partners_42Maru.svg" style="height: 50px;"></div>-->
-            <div style="margin: 0 20px;"><img src="../../img/partners_aws.png" style="height: 30px"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_BCAS.png" style="width:100%;"></div>
-<!--            <div style="margin: 0 20px;"><img src="../../img/partners_bittrex.svg" style="width:100%;"></div>-->
-            <div style="margin: 0 20px;"><img src="../../img/partners_datagate.png" style="width:100%;"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_dataweaver.png" style="height: 25px"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_dentons.png" style="height: 30px"></div>
-<!--            <div style="margin: 0 20px;"><img src="../../img/partners_dlight.svg" style="width:100%;"></div>-->
-<!--            <div style="margin: 0 20px;"><img src="../../img/partners_dp.png" style="height: 30px"></div>-->
-            <div style="margin: 0 20px;"><img src="../../img/partners_froala.svg" style="height: 60px"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_grafik.png" style="width:100%;"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_hanaon.png" style="width:100%;"></div>
-            <div style="margin: 0 20px;"><img src="../../img/partners_kbsys.png" style="width:100%;"></div>
+      <!-- partners -->
+      <div class="partners wrap_width">
+        <div class="box_width center">
+          <div class="line_box center mt-120px"></div>
+          <p class="title_text mb-40px center wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.5s"><span class="text_focus">Partners</span></p>
+
+          <div class="partners_list">
+            <div><img src="../img/partners_kgmobilians.svg" alt="KG 모빌리언스"></div>
+            <div><img src="../img/partners_slowmist.svg" alt="SLOWMIST"></div>
+<!--            <div><img src="../img/partners_Trustology.svg" alt="Trustology"></div>-->
+            <div><img src="../img/partners_wonfun.svg" alt="(주)원펀코퍼레이션"></div>
+            <div><img src="../img/partners_ziin.svg" alt="지인 커뮤니케이션"></div>
+            <div><img src="../img/partners_aws.svg" alt="aws"></div>
+            <div><img src="../img/partners_BCAS.svg" alt="BCAS"></div>
+            <div><img src="../img/partners_datagate.svg" alt="dataGATE"></div>
+            <div><img src="../img/partners_dataweaver.svg" alt="dataweaver"></div>
+            <div><img src="../img/partners_dentons.svg" alt="대성"></div>
+            <div><img src="../img/partners_froala.svg" alt="FROALA"></div>
+            <div><img src="../img/partners_grafik.svg" alt="grafik stereo"></div>
+            <div><img src="../img/partners_hanaon.svg" alt="(주)하나온개발"></div>
+            <div><img src="../img/partners_kbsys.svg" alt="kbsys"></div>
           </div>
         </div>
-      </center>
-      <!--slick :e-->
+      </div>
+      <!-- e: partners -->
+
       <!-- community -->
       <div class="community">
         <div class="line_box mt-120px center"></div>
@@ -204,51 +202,45 @@
     new WOW().init();
   </script>
 
-<script>
+  <script>
     $(function() {
       $('#header').load('m_header.html');
       $('#footer').load('m_footer.html');
     });
   </script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
   <script>
     $(function() {
-      $('#slider-div').slick({
-        slide: 'div', //슬라이드 되어야 할 태그 ex) div, li 
-        infinite: true, //무한 반복 옵션	 
-        centerMode: true, //중앙및 양옆에 잘리는 모드
-        centerPadding: '0px', //중앙화면 기준 양옆 보여질 정도
-        slidesToShow: 5, // 한 화면에 보여질 컨텐츠 개수
-        slidesToScroll: 1, //스크롤 한번에 움직일 컨텐츠 개수
-        speed: 1000, // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
-        arrows: true, // 옆으로 이동하는 화살표 표시 여부
-        dots: false, // 스크롤바 아래 점으로 페이지네이션 여부
-        autoplay: true, // 자동 스크롤 사용 여부
-        autoplaySpeed: 3000, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
-        pauseOnHover: true, // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
-        vertical: false, // 세로 방향 슬라이드 옵션
-        prevArrow: "", // 이전 화살표 모양 설정
-        nextArrow: "", // 다음 화살표 모양 설정
-        dotsClass: "", //아래 나오는 페이지네이션(점) css class 지정
-        draggable: true, //드래그 가능 여부 
+      $(".partners_list").slick({
+        dots: false,          // 스크롤바 아래 점으로 페이지네이션 여부
+        infinite: true,       // 무한 반복
+        speed: 1000,           // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+        slidesToShow: 4,      // 한 화면에 보여질 컨텐츠 개수
+        variableWidth: true,  // width 값 맞춤
+        pauseOnHover: true,   // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+        autoplay: true,       // 오토 슬라이드
+        autoplaySpeed: 2000,  // 오토 슬라이드 속도
+        prevArrow: "",        // 이전 화살표 모양 설정
+        nextArrow: "",        // 다음 화살표 모양 설정
+        draggable: true,      //드래그 가능 여부 
 
-        responsive: [ // 반응형 웹 구현 옵션
+        // 반응형 웹 구현 옵션
+        responsive: [         
           {
-            breakpoint: 960, //화면 사이즈 960px
-            settings: {
-              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-              slidesToShow: 3
+            breakpoint: 960,  //화면 사이즈 960px
+            settings: {       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경  
+              slidesToShow: 4
             }
           },
           {
-            breakpoint: 768, //화면 사이즈 768px
-            settings: {
-              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-              slidesToShow: 2
+            breakpoint: 768,  //화면 사이즈 768px
+            settings: {       //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow: 3
             }
           }
         ]
-
       });
     })
   </script>

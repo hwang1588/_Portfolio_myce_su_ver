@@ -50,8 +50,10 @@ body {background-color: #ffffff; overflow-x: hidden;}
 .gnb li {float: left; margin-right: 32px;}
 
 .etc {float: right;}
-.etc li {width: 120px; height: 40px; float: left; margin-left: 16px;}
-.etc li:first-child {width: 40px; margin-left: 0;}
+.etc li {width: 120px; height: 42px; float: left; margin-left: 16px;}
+.etc li:first-child {width: 52px; margin-left: 0;}
+.etc li img {width: 100%; height: 100%;}
+.etc li:first-child img {width: 52px; height: 42px;}
 .etc li a {display: block;}
 
 /* footer */
@@ -75,16 +77,13 @@ body {background-color: #ffffff; overflow-x: hidden;}
 .mov_container {width:100%; height:auto;}
 #mov {width: 100%; height: auto;}
 
-
 .main p {margin: 400px auto; text-align: center;}
 .main .title_text {font-size: 32px; color: #0050B9; line-height: 40px; font-weight: 400;}
-
 
 /* economy */
 .economy .img_box {width: 100%; background-color: #fffdf5; padding: 48px 0;}
 .economy .img_box img {width: 1080px; height: 540px; display: block; margin: 0 auto;}
 .economy .line_box {margin-top: 160px;}
-
 
 /* bloom */
 .bloom {height: 792px; background: url(../img/img_bloom_bg.png) center bottom no-repeat;} /* 192 + 600 */
@@ -94,11 +93,9 @@ body {background-color: #ffffff; overflow-x: hidden;}
 .bloom .img_box,
 .bloom .img_box img {width: 600px; height: 600px;}
 
-
 /* project */
 .project .img_box,
-.project .img_box img {width: 1280; height: 510px;}
-
+.project .img_box img {width: 1280; height: 508px;}
 
 /* decentralized */
 .decentralized {margin-top: 192px; height: 576px; background-color: #F5FFFF;} /* 48 + 480 + 48 */
@@ -108,6 +105,11 @@ body {background-color: #ffffff; overflow-x: hidden;}
 .decentralized .img_box img {width: 480px; height: 480px;}
 
 .decentralized .text_box {float: right; text-align: left; margin-top: 180px;}
+
+
+/* partners */
+.partners_list div {margin: 0 32px; height: 48px;}
+.partners_list div img {width: auto; height: 48px;}
 
 
 /* community */
@@ -149,17 +151,8 @@ body {background-color: #ffffff; overflow-x: hidden;}
 .feature .text_box .text_focus img {width: 30px; height: 30px; margin: -4px 12px 0 0;}
 
 /* service */
-.service .text_box {float: left;}
-
 .service .img_box,
-.service .img_box img {width: 1080px; height: 450px;}
-
-
-/* sidechain */
-.sidechain .img_box,
-.sidechain .img_box img {width: 1280px; height: 552px; display: block;}
-
-
+.service .img_box img {width: 1080px;}
 
 /* -------------------- bloom.html -------------------- */
 /* platform */
@@ -180,7 +173,7 @@ body {background-color: #ffffff; overflow-x: hidden;}
 
 /* NFT */
 .nft .img_box,
-.nft .img_box img {width: 1080px; height: 610px; margin: 0 auto;}
+.nft .img_box img {width: 1080px; height: 741px; margin: 0 auto;}
 
 .nft .btn {width: 76px; height: 30px; margin-top: 32px;}
 .nft .btn li {width: 30px; height: 30px; float: left;}
@@ -201,19 +194,17 @@ body {background-color: #ffffff; overflow-x: hidden;}
 
 /* -------------------- dev.html -------------------- */
 /* team */
-.team .team_list {width: 1200px; height: 432px;}
-.team .team_list li {width: 240px; float: left; margin-right: 80px;}
-.team .team_list li:last-child {margin-right: 0;}
+.team_box {width: 240px; height: 432px; margin: 0 40px;}
+.team .slick-slide {height: 432px}
+.team .team_list .img_box {margin-bottom: 32px;}
+.team .team_list .img_box,
+.team .team_list .img_box img {width: 240px; height: 240px; display: block;}
 
-.team .team_list li .img_box {width: 240px; height: 240px; display: block; margin-bottom: 32px;}
-.team .team_list li .img_box img {width: 240px; height: 240px; display: block;}
-
-.team .team_list li .text_box {width: 240px; height: 48px; margin-bottom: 16px;}
-.team .team_list li .text_box span {float: left;}
-.team .team_list li a {width: 30px; height: 30px; display: block; float: right;}
-.team .team_list li a img {width: 30px; height: 30px; display: block;}
-
-.team .team_list li .sub_text {float: left; text-align: left;}
+.team .team_list .text_box {width: 240px; margin-bottom: 12px;}
+.team .team_list a {float: right}
+.team .team_list a,
+.team .team_list a img {width: 30px; height: 30px; display: block;}
+.team .team_list .sub_text {line-height: 26px;}
 
 .team .btn {width: 76px; height: 30px;}
 .team .btn li {width: 30px; height: 30px; float: left;}
